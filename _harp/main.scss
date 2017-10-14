@@ -1,16 +1,23 @@
 
 .hero {
   background-color:#00386b;
+  background-image: url('/assets/images/3px-tile.png');
   padding: 6em 0;
   color: #fff;
   
     text-align: center;
+    
 
     h1 {
       font-size: 4em;
+      text-transform: uppercase;
     }
   p {
     font-size: 3em;
+  }
+
+  p.small {
+    font-size: 2em;
   }
 
   
@@ -42,6 +49,11 @@ $paddingList: ("pudgy" 9em) ("meaty" 8.5em) ("portly" 8em) ("hefty" 7.5em) ("bul
 
 .ui.menu .fa { margin-right: 10px;}
 
+
+h2.leadin {
+  font-size: 2.7em;
+  text-transform: uppercase;
+}
 
 .footer {
     background-color: #00386b;
