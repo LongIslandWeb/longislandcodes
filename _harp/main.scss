@@ -1,0 +1,51 @@
+
+.hero {
+  background-color:#00386b;
+  padding: 6em 0;
+  color: #fff;
+  
+    text-align: center;
+
+    h1 {
+      font-size: 4em;
+    }
+  p {
+    font-size: 3em;
+  }
+
+  
+
+}
+
+
+.ui.menu {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+
+$paddingList: ("pudgy" 9em) ("meaty" 8.5em) ("portly" 8em) ("hefty" 7.5em) ("bulky" 7em) ("beefy", 6.5em) ("fluffy" 6em) ("cushy" 5em) ("airy" 4.5em) ("spacey" 4em) ("comfy" 3em) ("homey" 2.5em) ("cozy" 2em) ("narrow" 1.5em) ("snug" 1em) ("compact" 1.5em) ("tight" 0em);
+
+@each $i in $paddingList {
+  $name: nth($i, 1);
+  $value: nth($i, 2);
+  .#{$name}, .ui.grid.#{$name} {
+    padding: $value 0;
+  }
+  
+}
+
+
+.ui.button.caps {
+  text-transform: uppercase;
+}
+
+.ui.menu .fa { margin-right: 10px;}
+
+
+.footer {
+    background-color: #00386b;
+    color: #fff;
+    font-size: 2em;
+    padding: 2em;
+}
