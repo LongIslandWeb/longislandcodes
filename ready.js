@@ -13,7 +13,7 @@ $(document).ready(function () {
 
       // your event source
       {
-          url: 'https://api.liweb.group/events/fullcal', // use the `url` property
+          url: 'http://localhost:3000/events/fullcal', // use the `url` property
           
       }
 
