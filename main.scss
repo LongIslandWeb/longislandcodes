@@ -4,9 +4,9 @@
   background-image: url('/assets/images/3px-tile.png');
   padding: 6em 0;
   color: #fff;
-  
+
     text-align: center;
-    
+
 
     h1 {
       font-size: 4em;
@@ -20,10 +20,17 @@
     font-size: 2em;
   }
 
-  
+
 
 }
 
+html, body {
+  font-size: 16px;
+}
+
+p {
+  font-size: 1.25em;
+}
 
 .ui.menu {
   margin-bottom: 0;
@@ -31,7 +38,7 @@
 }
 
 
-$paddingList: ("pudgy" 9em) ("meaty" 8.5em) ("portly" 8em) ("hefty" 7.5em) ("bulky" 7em) ("beefy", 6.5em) ("fluffy" 6em) ("cushy" 5em) ("airy" 4.5em) ("spacey" 4em) ("comfy" 3em) ("homey" 2.5em) ("cozy" 2em) ("narrow" 1.5em) ("snug" 1em) ("compact" 1.5em) ("tight" 0em);
+$paddingList: ("pudgy" 9em) ("meaty" 8.5em) ("portly" 8em) ("hefty" 7.5em) ("bulky" 7em) ("beefy", 6.5em) ("fluffy" 6em) ("cushy" 5em) ("airy" 4.5em) ("spacey" 4em) ("comfy" 3em) ("homey" 2.5em) ("cozy" 2em) ("narrow" 1.5em) ("snug" 1em) ("compact" 0.5em) ("tight" 0em);
 
 @each $i in $paddingList {
   $name: nth($i, 1);
@@ -39,7 +46,7 @@ $paddingList: ("pudgy" 9em) ("meaty" 8.5em) ("portly" 8em) ("hefty" 7.5em) ("bul
   .#{$name}, .ui.grid.#{$name} {
     padding: $value 0;
   }
-  
+
 }
 
 
@@ -60,4 +67,35 @@ h2.leadin {
     color: #fff;
     font-size: 2em;
     padding: 2em;
+}
+
+.btn {
+background: #3498db;
+background-image: -webkit-linear-gradient(top, #00386b, #2d35a1);
+background-image: -moz-linear-gradient(top, #00386b, #2d35a1);
+background-image: -ms-linear-gradient(top, #00386b, #2d35a1);
+background-image: -o-linear-gradient(top, #00386b, #2d35a1);
+background-image: linear-gradient(to bottom, #00386b, #2d35a1);
+-webkit-border-radius: 10;
+-moz-border-radius: 10;
+border-radius: 10px;
+color: #ffffff;
+font-size: 30px;
+padding: 20px 40px 20px 40px;
+width: 400px;
+text-align: center;
+text-decoration: none;
+display: block;
+text-transform: uppercase;
+}
+
+.btn:hover {
+background: #3cb0fd;
+background-image: -webkit-linear-gradient(top, #091182, #2d35a1);
+background-image: -moz-linear-gradient(top, #091182, #2d35a1);
+background-image: -ms-linear-gradient(top, #091182, #2d35a1);
+background-image: -o-linear-gradient(top, #091182, #2d35a1);
+background-image: linear-gradient(to bottom, #091182, #2d35a1);
+text-decoration: none;
+color: #fff;
 }
